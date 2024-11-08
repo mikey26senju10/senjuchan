@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello Kitty Theme Website</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Background styling */
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #ffd1dc, #ff99cc);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    /* Main container styling */
+    .container {
+      background: #fff;
+      border-radius: 15px;
+      width: 90%;
+      max-width: 600px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    /* Header and title */
+    h1 {
+      font-size: 2.5em;
+      color: #ff66b2;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 1.2em;
+      color: #ff66b2;
+      margin-bottom: 20px;
+    }
+
+    /* Button styling */
+    .btn {
+      display: inline-block;
+      background-color: #ff66b2;
+      color: #fff;
+      padding: 10px 20px;
+      margin-top: 20px;
+      text-decoration: none;
+      border-radius: 25px;
+      font-size: 1em;
+      transition: background 0.3s;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #ff3385;
+    }
+
+    /* Footer styling */
+    .footer {
+      margin-top: 20px;
+      font-size: 0.8em;
+      color: #666;
+    }
+
+    /* Explore More section styling */
+    .explore-section {
+      display: none;
+      margin-top: 20px;
+      text-align: left;
+    }
+
+    .explore-section h3 {
+      color: #ff66b2;
+      font-size: 1.4em;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    /* Square photo display styling */
+    .photo-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 15px;
+    }
+
+    .photo-section:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .photo-container {
+      width: 150px;
+      height: 150px;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      margin: 0 10px;
+    }
+
+    .photo-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .text-area {
+      width: 50%;
+    }
+
+    .text-area p {
+      background-color: #ffebf0;
+      padding: 10px;
+      border-radius: 10px;
+      color: #333;
+      font-size: 1em;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Hello Kitty!</h1>
+    <h2>Welcome to your personal adorable Hello Kitty website my hello kitty baby!</h2>
+    <p>i love you my hello kitty baby you are the cutest. open for a surprise hehe!</p>
+    <a href="javascript:void(0);" class="btn" onclick="toggleExplore()">open</a>
+
+    <!-- Hidden Explore Section -->
+    <div class="explore-section" id="exploreSection">
+      <h3>the pretiest and sweetest meow!</h3>
+      
+      <!-- First photo and text area -->
+      <div class="photo-section">
+        <div class="photo-container">
+          <img src="images.html/preety.jpg" alt="Photo 1">
+        </div>
+        <div class="text-area">
+          <p>yo baby! hyiee puchu my cute lil good girl.you are so sweet like a meow your smile your eyes everything is so pretty and so cute you are the best babyy! </p>
+        </div>
+      </div>
+
+      <!-- Second photo and text area (reversed) -->
+      <div class="photo-section">
+        <div class="photo-container">
+          <img src="images.html/cute.jpg" alt="Photo 2">
+        </div>
+        <div class="text-area">
+          <p>my adorable baby a lots of love,hugs and kissies for you my gulugulu bby!always smile like this ok dummy smileee!!!! i love you my princess!!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>with lots love for my Hello Kitty girl</p>
+    </div>
+  </div>
+
+  <script>
+    // Function to toggle the "Explore More" section
+    function toggleExplore() {
+      const exploreSection = document.getElementById('exploreSection');
+      exploreSection.style.display = exploreSection.style.display === 'none' || exploreSection.style.display === '' ? 'block' : 'none';
+    }
+  </script>
+</body>
+</html>
